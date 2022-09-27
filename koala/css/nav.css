@@ -1,0 +1,187 @@
+*{
+	margin: 0;
+}
+
+
+.container{
+	width: 100%;
+	position: relative;
+}
+
+
+nav{
+	display: flex;
+	background: black;
+	color: white;
+	padding: .5em;
+	position: fixed;
+	left: 0;
+	right: 0;
+	padding: 0;
+	top: 0;
+	z-index: 2;
+}
+
+nav ul{
+	display: flex;
+	list-style-type: none;
+	width: 90%;
+}
+
+nav ul>li + li{
+	margin-left: .5em;
+}
+
+nav ul>li:last-child{
+	margin-left: auto;
+}
+
+.flash-nav{
+	background: black;
+}
+
+.flash-title{
+	background: red;
+	padding: .3em;
+	margin: 0;
+	border-top-right-radius: 35%;
+	border-bottom-right-radius: 35%;
+	width: 10%;
+}
+
+.flash-content{
+	width: 90%;
+	margin-top: .25em;
+}
+
+
+.section{
+	display: flex;
+	margin-top: 1.6em;
+}
+
+.main{
+	flex: 3;
+	padding: 2em;
+	background: white;
+}
+
+.aside{
+	flex: 1;
+	padding: 2em;
+	background: grey;
+	position: relative;
+	right: 0;
+	left: 0;
+}
+
+.aside-content{
+	position: absolute;
+	top: 6em;
+	background: grey;
+	padding-right: 2em;
+}
+	
+.aside-content p {
+	margin-top: 1em;
+
+}
+
+.btn{
+	background: black;
+	padding: .3em;
+	color: white;
+	cursor: pointer;
+	position: absolute;
+	z-index: 1; 
+	right: 2em;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+
+/**
+ * Login form 
+ */
+
+.login-form{
+	background: lightgreen;
+	padding: 5%;
+	position: absolute;
+	top: 10em;
+	left: 30%;
+	width: 40%;
+	z-index: 2;
+	display: none;
+}
+
+.form-group{
+	display: flex;
+	flex-direction: column;
+	margin-top: 5px;
+}
+
+input[type='text'], input[type='password']{
+	height: 30px;
+	width: 90%;
+	margin-bottom: 5px;
+}
+
+.btn-submit{
+	width: 40%;
+	height: 30px;
+}
+
+.form{
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.close-button{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+.fa-sign-in{
+	font-size: 12px !important;
+	color: green;
+}
+
+@media(max-width:768px){
+
+	.section{
+		flex-direction: column;
+	}
+
+	.aside{
+		padding-top: 2em;
+	}
+
+
+	.aside-content{
+		left: 0;
+		right: 0;
+		top: 2em;
+		padding: 1em;
+
+	}
+
+	.btn{
+		top: 1em;
+		right: 1em;
+	}
+
+
+
+
+
+}
+
+
+
+
+

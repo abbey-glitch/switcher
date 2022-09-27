@@ -1,0 +1,27 @@
+*{
+	margin: 0;
+}
+
+.container{
+	width: 100%;
+	position: relative;
+	height: 400px;
+	background-color: yellow;
+}
+
+.box{
+	top: 0;
+	bottom: 70%;
+	right: 80%;
+	left: 0;
+	background-color: green;
+	position: absolute;
+	transition: all .5s linear;
+
+}
+
+.box:hover{
+	right: 0;
+	left: 80%;
+}
+

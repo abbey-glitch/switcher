@@ -1,0 +1,105 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.toggle-container {
+	position: absolute;
+	top: 2em;
+	left:80%;
+	background: rgb(241, 226, 226);
+	color:white;
+	padding: 2em;
+}
+.switch-container{
+	text-decoration: none;
+	color:white;
+	font-weight: bolder;
+	font-size: large;
+	border: 2px solid black;
+	background-color: blanchedalmond;
+	padding-top: 1em;
+	padding-left: 3em;
+	position: relative;
+	z-index: 1;
+}
+.switch{
+	top:0;
+	left:0;
+	right: 3em;
+	bottom:0;
+	font-size: 8px;
+	font-weight: bolder;
+	font-family: Arial, Helvetica, sans-serif;
+	color: aliceblue;
+	text-decoration: none;
+	background-color: green;
+	transition: all 2s cubic-bezier(0.61, 0.61, 0.6, 0.63);
+	position: absolute;
+}
+.switchBtn{
+	position: absolute;
+	background-color: black;
+	color:white;
+	left: 3em;
+	right: 0;
+}
+.item{
+	border: 0.4px solid orange;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1em 0 0 0;
+	transition: transform .3s linear;
+}
+.item img{
+	width:50%;
+}
+.item h3{
+	color: white;
+	background-color: rgba(0, 0, 0, 0.6);
+	padding-right: 2.3em;
+	padding-left: 2.3em;
+	padding-bottom: .6em;
+	padding-top: .6em;
+
+}
+
+.container{
+	width: 100vw;
+}
+
+.height{
+	height:900px;
+	width: 50%;
+	background-color: green;
+	background-image: url(avatar.jpeg);
+	background-repeat: no-repeat;
+	background-size: 150px 140px;
+	background-position: 100px 300px;
+}
+
+.height2{
+	width: 100vw;
+	height: 100vh;
+	background-color: orange;
+	background-image: url(koala.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	padding-top: 40%;
+
+}
+
+.header1{
+	font-size: 3em;
+	font-weight: bolder;
+	font-family: Helvetica, sans-serif;
+	border: 2px solid orange;
+	padding: .2em;
+	mix-blend-mode: soft-light;
+	display: inline;
+	margin-left: 30%;
+	background-color: orange;
+}
+

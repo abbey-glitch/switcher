@@ -1,0 +1,165 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+	width:auto;
+}
+
+@media(max-width:260px){
+	/*.switch-container{
+		left:50%;
+	}*/
+	.height2{
+		width: 40vw;
+		height: 50vh;
+	}
+	.switch{
+		width: 30%;
+		height: 20px;
+		color: blue;
+	}
+	.switch-btn{
+		right: 10%;
+		width: 10%;
+	}
+}
+.item img{
+	width: 50%;
+}
+
+.container{
+	width: 100vw;
+}
+
+.height{
+	height:900vh;
+	width: 50%;
+	background-color: green;
+	background-image: url(../images/avatar.jpeg);
+	background-repeat: no-repeat;
+	background-size: 150px 140px;
+	background-position: 100px 300px;
+}
+
+.height2{
+	width: 100vw;
+	height: 100vh;
+	background-color: orange;
+	background-image: url(../images/koala.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	padding-top: 40%;
+	position: relative;
+
+}
+
+.header1{
+	font-size: 3em;
+	font-weight: bolder;
+	font-family: Helvetica, sans-serif;
+	border: 2px solid orange;
+	padding: .2em;
+	mix-blend-mode: soft-light;
+	display: inline;
+	/*margin-left: 30%;*/
+	background-color: orange;
+	position: absolute;
+	top:50%;
+	left:30%;
+	right:30%;
+	text-align:center;
+}
+
+/*
+	Switch Buttons
+ */
+.switch-container{
+	position: absolute;
+	top: 2em;
+	bottom: 10%;
+	background-color: rgba(0, 0, 0, .8);
+	padding: 1em;
+	right: 5%;
+	left: 75%;
+}
+
+.switch{
+	background-color: black;
+	position: relative;
+	width: 100%;
+	height: 30px;
+	padding: 0;
+	z-index: 1;
+}
+
+.switch-container h2{
+	margin-bottom: 20px;
+	color: orange;
+	mix-blend-mode: hard-light;
+}
+
+.products h2{
+	margin-top: 20px;
+}
+
+.item{
+	border: 0.4px solid orange;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1em 0 0 0;
+	transition: transform .3s linear;
+}
+
+.item:hover{
+	transform: scale(1.1);
+}
+
+.item + .item{
+	margin-top: 2em;
+}
+
+.item h3{
+	color: white;
+	background-color: rgba(0, 0, 0, 0.6);
+	padding-right: 5.3em;
+	padding-left: 5.3em;
+	padding-bottom: .6em;
+	padding-top: .6em;
+
+}
+
+.item img{
+	width: 50%;
+}
+
+
+
+.switch-btn{
+	position: absolute;
+	background: green;
+	top: 0;
+	bottom: 0;
+	right: 50%;
+	width: 50%;
+	color: white;
+	padding: .3em;
+	text-decoration: none;
+	background-image: linear-gradient(to right, teal, green);
+	font-family: Helvetica;
+	transition: all .5s cubic-bezier(1,-0.37, 0.58, 1);
+}
+
+.switch-btn-off{
+	background: red;
+	background-image: linear-gradient(to left teal, red);
+	
+}
+
+.switch-btn:hover{
+	transform: scale(1.1);
+	font-weight: 700;
+}
+
+
+

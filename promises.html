@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<style>
+	*{
+		margin: 0;
+		box-sizing: border-box;
+	}
+
+	.container{
+		width: 100%;
+	}
+	.header1{
+		display:inline-block;
+	}
+
+</style>
+<body>
+
+	<div class='container'>
+		<div class='header1'><h1>Cats Facts</h1></div>
+
+		
+	</div>
+	
+
+<script type="text/javascript">
+
+async function getFacts(){
+
+	await fetch("https://cat-fact.herokuapp.com/facts").then(data => data.json()).then(data => {
+		console.log(data);
+		let data_content = document.getElementsByClassName('header1')[0];
+	    let table_Code_div = document.createElement('div');
+	    let table_code = `<table>
+								 <thead>
+									  <tr>
+										<th>facts</th>
+										<th>id</th>
+									  </tr>
+								 </thead>
+								 <tbody>`
+			for(let i=0; i<data.length; i++){
+				table_code += `<tr>
+								  <td>${data[i]['_id']}</td>
+								  <td>${data[i]['text']}</td>
+								  
+							  </tr>`
+			}
+								 
+		   table_code += "</tbody><table>";
+			table_Code_div.innerHTML = table_code;
+							document.getElementsByClassName('container')[0].appendChild(table_Code_div);
+	})
+
+
+
+}
+
+getFacts();
+
+
+console.log("Yes this part works");
+
+
+</script>
+</body>
+</html>
